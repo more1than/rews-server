@@ -1,0 +1,54 @@
+Version: v1
+TyyConfig:
+  Name: 上海晨皓信息科技有限公司
+  Email: 41636884@qq.com
+  Phone: 187****2876
+  AccessKey: 20e5d5cb60bf4367840064cf1af5f5a6
+  SecurityKey: 89ebea977d484c26bac271c3b9f71718
+  Url: https://api.ctyun.cn
+  ZoneName: 上海4 # 区域
+  RegionId: cn-sh1
+  ZoneId: cn-sh1a
+  ImageRef: 8556c9f6-1ae4-4638-b4fd-90f41891de58 # 镜像 id
+  VpcId: 82e5698c-8e59-4344-8b2f-e22defdeb76b # vpc id
+  SecurityGroupId: 1856dae3-784f-432d-9560-c68ac9cb126d # 安全组 id
+  SubnetId: cc361114-c012-4d8d-8c99-62f8f4046220 # 子网 id
+  BindIpTiming: 0-30 #定时查询绑定没有绑定弹性ip的主机(分-秒)
+  osType: linux # 系统类型
+  Provider: ctyun # 运营商
+  AccountName: 测试账号
+Database:
+  MysqlUser: root
+  MysqlPassword: 123456
+  MysqlHost: 127.0.0.1
+  MysqlPort: 3306
+  MysqlDb: hx_resource_monitor
+Email:
+  MailName: pzh
+  MailHost: smtp.qq.com
+  MailUser: 1691140271@qq.com
+  MailPass: dfwiltwsvmfnchjg
+  Sender: 1691140271@qq.com
+  Phone: 13974253803
+LogConfig:
+  LogFilePath: ./logs
+  MaxBackups: 30
+  MaxSize: 100
+TimeConfig:
+  StartTime: '08:30'
+  EndTime: '22:30'
+SmsConfig:
+  Url: http://www.sendcloud.net/smsapi/send
+  SmsUser: atomcare
+  SmsKey: vBPQDgLih8UNpNA7bqx8JZDR9QiNUAA1
+  TemplateId: 42891  # 短信模板
+EmailConfig:
+  Url: http://api.sendcloud.net/apiv2/mail/send
+  ApiUser: service06
+  ApiKey: ZWUlaxkliCPR0hp6
+  From: service06@service01.cloudwonder.com  # 发送邮件地址
+  FromName: hxe
+  Subject: 告警邮件  # 邮件标题
+TimerTime:
+  timer1: 21600
+  timer2: 3600
